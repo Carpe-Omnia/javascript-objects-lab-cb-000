@@ -4,7 +4,10 @@ function updateObjectWithKeyAndValue(object, key, value) {
   thing[key] = value
   return thing
 }
-function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {}
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
+  object[key] = value 
+  return object 
+}
 function deleteFromObjectByKey(object, key) {
   thing = object ;
   delete thing[key] ;
